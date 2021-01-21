@@ -12,14 +12,47 @@
 </head>
 <body>
 <header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#ishopNav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="products.html">IShop</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="ishopNav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart (<span class="total-count">0</span>)
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu shopping-cart-desc">
+                            Total count: <span class="total-count">0</span><br>
+                            Total сost: <span class="total-cost">0</span><br>
+                            <a href="shopping-cart.html" class="btn btn-primary btn-block">View cart</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary navbar-btn navbar-right sign-in"><i class="fa fa-facebook fa-1x"></i> Sign in</a>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </header>
 <div class="container-fluid">
     <div class='raw'>
         <aside class='col-xs-12 col-sm-4 col-md-3 col-lg-2'>
             <!--TO DO-->
             <div class="visible-xs-block xs-option-container">
-                <a class="pull-right" data-toggle="collapse" href="#productCatalog">Product catalog <span class="caret"></span></a>
+                <a class="pull-right" data-toggle="collapse" href="#productCatalog">Product catalog <span
+                        class="caret"></span></a>
                 <a data-toggle="collapse" href="#findProducts">Find products <span class="caret"></span></a>
             </div>
             <!--Search form-->
@@ -38,7 +71,8 @@
                         <div class="more-options">
                             <!--Ссылка которая разворачивает наш колапсабл. В отличие от бустрапа это не будет кнопкой поэтому
                             мы удаляем классы: class="btn btn-primary" role="button"-->
-                            <a data-toggle="collapse" href="#searchOptions"> More filters <span class="caret"></span> </a>
+                            <a data-toggle="collapse" href="#searchOptions"> More filters <span class="caret"></span>
+                            </a>
                             <!--Ссылку мы создали - теперь нам нужно создать объект с id='searchOptions', для того
                             чтобы при нажатии на ссылку More filters открывался соответствующий компонент-->
                         </div>
@@ -55,12 +89,14 @@
                             <label><input type="checkbox" id="allCategoties"> All</label>
                             <div class="form-group">
                                 <div class="checkbox">
-                                    <label><input type="checkbox" name="category" value="1" class="search-option"> E-book (78)</label>
+                                    <label><input type="checkbox" name="category" value="1" class="search-option">
+                                        E-book (78)</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="checkbox">
-                                    <label><input type="checkbox" name="category" value="2" class="search-option"> MP3-Player (75)</label>
+                                    <label><input type="checkbox" name="category" value="2" class="search-option">
+                                        MP3-Player (75)</label>
                                 </div>
                             </div>
                         </div>
@@ -69,12 +105,14 @@
                             <label><input type="checkbox" id="allProducers"> All</label>
                             <div class="form-group">
                                 <div class="checkbox">
-                                    <label><input type="checkbox" name="producer" value="1" class="search-option"> Dell (56)</label>
+                                    <label><input type="checkbox" name="producer" value="1" class="search-option"> Dell
+                                        (56)</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="checkbox">
-                                    <label><input type="checkbox" name="producer" value="2" class="search-option"> Apple (22)</label>
+                                    <label><input type="checkbox" name="producer" value="2" class="search-option"> Apple
+                                        (22)</label>
                                 </div>
                             </div>
                         </div>
